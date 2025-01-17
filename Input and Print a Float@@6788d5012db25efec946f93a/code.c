@@ -1,7 +1,7 @@
 #include <stdio.h>
 int a;
 int main(){
-    scanf("%f"",a);
+    scanf("%f",a);
     printf("%f/n",a)
 
 }
