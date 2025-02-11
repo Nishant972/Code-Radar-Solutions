@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main(){
-    int a,b,c;
+    int a,c;
     scanf("%d %d",&a,&b);
     c=~a;
-    c=~b;
+    
     printf("%d",c);
     return 0;
     }
