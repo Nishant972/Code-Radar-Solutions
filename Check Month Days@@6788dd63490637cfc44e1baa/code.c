@@ -12,7 +12,7 @@ int main(){
         printf("31");
     }
 
-    }else if(b==4){
+    else if(b==4){
         printf("30");
     }else if(b==5){
         printf("31");
