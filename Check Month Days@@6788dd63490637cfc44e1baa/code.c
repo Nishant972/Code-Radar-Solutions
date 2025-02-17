@@ -11,8 +11,7 @@ int main(){
     else if(b==3){
         printf("31");
     }
-    else if(b==3){
-        printf("31");
+
     }else if(b==4){
         printf("30");
     }else if(b==5){
