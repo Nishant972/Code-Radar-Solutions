@@ -1,7 +1,6 @@
 
 #include<stdio.h>
 
-void fibonacci(int n);
 
 
 void fibonacci(int n) {
