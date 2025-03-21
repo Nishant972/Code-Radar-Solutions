@@ -10,13 +10,19 @@ int main(){
     else{
         febonacci(n);
     }
+    return 0;
 }
 void febonacci(n){
     int a=0,b=1,c;
-    for(int i=1;i<=n;i++){
-        a=b;
-        b=c;
+    if(n==1){
+        printf("%d",a);
+    }
+    printf("%d",a);
+    printf("%d",b);
+    for(int i=3;i<=n;i++){
         c=a+b;
         printf("%d ",c);
+        a=b;
+        b=c;
     }
 }
