@@ -13,6 +13,9 @@ int main(){
                 if(j==1||j==n){
                     printf("*");
                 }
+                else{
+                    printf("/n")
+                }
             }
         }
         printf("\n");
