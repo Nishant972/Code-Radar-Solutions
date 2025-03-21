@@ -7,6 +7,7 @@ int main(){
             printf("%d",j);
             count+=count;
         }
-    }
+        printf("\n")
+    }   
     return 0;
 }
