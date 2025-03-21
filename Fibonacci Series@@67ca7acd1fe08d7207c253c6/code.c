@@ -1,29 +1,36 @@
+
 #include<stdio.h>
-void febonacci(int n);
-int main(){
+
+void fibonacci(int n);
+
+int main() {
     int n;
-    scanf("%d",&n);
-    if(n<=0){
+    scanf("%d", &n);
+
+    if(n <= 0) {
         printf("Invalid input\n");
         return 0;
-    }
-    else{
-        febonacci(n);
+    } else {
+        fibonacci(n);
     }
     return 0;
 }
-void febonacci(int n){
-    int a=0,b=1,c;
-    if(n==1){
-        printf("%d",a);
+
+void fibonacci(int n) {
+    int a = 0, b = 1, c;
+
+    if(n == 1) {
+        printf("%d\n", a);
+        return;
     }
-    printf("%d ",a);
-    printf("%d ",b);
-    for(int i=3;i<=n;i++){
-        c=a+b;
-        printf("%d ",c);
-        a=b;
-        b=c;
+
+    printf("%d %d ", a, b);
+
+    for(int i = 3; i <= n; i++) {
+        c = a + b;
+        printf("%d ", c);
+        a = b;
+        b = c;
     }
     printf("\n");
 }
