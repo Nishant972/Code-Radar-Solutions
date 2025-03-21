@@ -25,4 +25,5 @@ void febonacci(int n){
         a=b;
         b=c;
     }
+    printf("\n")
 }
