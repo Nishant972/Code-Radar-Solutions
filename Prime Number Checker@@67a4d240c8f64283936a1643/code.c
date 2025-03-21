@@ -10,7 +10,7 @@ int main()
         scanf("%d", &num);
         issghjdsduifdsPrime(num);
     }
-}
+};
 
 void issghjdsduifdsPrime(int a)
 {
