@@ -1,6 +1,18 @@
 #include<stdio.h>
 
-void isPrime(int a)
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int num=0;
+        scanf("%d", &num);
+        issghjdsduifdsPrime(num);
+    }
+}
+
+void issghjdsduifdsPrime(int a)
 {
     int flag=0;
 
@@ -23,14 +35,3 @@ void isPrime(int a)
 
 };
 
-int main()
-{
-    int t;
-    scanf("%d",&t);
-    while(t--)
-    {
-        int num=0;
-        scanf("%d", &num);
-        isPrime(num);
-    }
-}
