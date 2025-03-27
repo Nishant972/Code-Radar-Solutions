@@ -1,4 +1,4 @@
-void isPrime(int num){
+int isPrime(int num){
     int flag=0;
     if(num=0 || num==1){
         flag=0;
