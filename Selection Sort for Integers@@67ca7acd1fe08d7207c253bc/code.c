@@ -11,7 +11,7 @@ void selectionSort(int arr[],int n){
         arr[i]=temp;
     }
 }
-int printArray(int arr,int n){
+int printArray(int arr[],int n){
     for(int i=0;i<n;i++){
         printArray("%d ",arr[i]);
     }
