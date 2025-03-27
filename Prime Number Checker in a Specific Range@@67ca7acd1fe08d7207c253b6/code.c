@@ -1,17 +1,21 @@
 void printPrimesInRange(int a,int b){
-    int isprime=1;
+    
     for(int i=a;i<b;i++){
-        if(a<1){
-            isprime=0;
+        if(a<2){
+            continue;
         }
-        else{
-            if(b%a==0){
+        int isprime=1;
+        for(int j=2;j<i;j++){
+            if(i%j==2){
                 isprime=0;
+                break;
             }
         }
-    }
-    if(isprime){
+        if(isprime){
         printf("%d ",a);
+        }
     }
+
+    
 
 }
