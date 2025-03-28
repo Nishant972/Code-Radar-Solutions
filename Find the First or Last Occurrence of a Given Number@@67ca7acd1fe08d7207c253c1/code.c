@@ -1,20 +1,27 @@
 int findOccurrence(int arr[],int n,int target,char mode){
-    int found=0;
-    for(int i=0;i<=n;i++){
-        if(arr[i]==target){
-            break;
-        }
-        
-    }if(mode=='F'){
-                printf("%d",arr[i-1]);
+    if(mode=='F'){
+        for(int i=0;i<n;i++){
+            if(arr[i]==target){
+                if(i=0){
+                    printf("-1");
+                }
+                else{
+                    return arr[a-i];
+                }
             }
-            else{
-                printf("%d",arr[i+1]);
-            }
-            found=1;
-    if(!found){
-        printf("-1");
-    }
 
+        }
+    }
+}   if(mode=='L'){
+        for(int i=0;i<n;i++){
+            if(arr[i]==target){
+                if(i=0){
+                    printf("-1");
+                }
+                else{
+                    return arr[a-i];
+                }
+            }
+        }
 
 }
