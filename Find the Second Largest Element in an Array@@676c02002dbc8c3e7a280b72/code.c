@@ -19,7 +19,7 @@ int largest(int arr[],int n){
             abc=arr[i+1];
         }
     }
-    return abc;
+    return arr[abc];
 }
 int main(){
     int n;
