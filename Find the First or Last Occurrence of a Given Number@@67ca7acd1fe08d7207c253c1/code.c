@@ -18,7 +18,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
             right=mid-1;
         }
     }
-    if(resul==-1 || resul==0){
+    if(result==-1 || result==0){
         return -1;
     }
     else{
