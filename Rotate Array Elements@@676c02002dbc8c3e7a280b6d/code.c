@@ -7,7 +7,7 @@ void shifttoright(int arr[],int n){
     arr[0]=last;
 }
 void rotatearray(int arr[],int n,int k){
-    for(int i=0;i<n;i++){
+    for(int i=0;i<k;i++){
         shifttoright(arr,n);
     }
 }
