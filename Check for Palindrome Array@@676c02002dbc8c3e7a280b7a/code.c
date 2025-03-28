@@ -1,12 +1,16 @@
 #include<stdio.h>
 void palindromecheck(int arr[],int n){
+    found=0
     for(int i=0;i<n;i++){
         if(arr[i]==arr[n-1-i]){
-            printf("YES");
+            found++;
         }
-        else{
-            printf("NO");
-        }
+    }
+    if(found==n){
+        printf("YES");
+    }
+    else{
+        printf("NO")
     }
 }
 int main(){
