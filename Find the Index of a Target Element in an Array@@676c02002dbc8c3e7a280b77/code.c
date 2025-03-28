@@ -4,10 +4,9 @@ int targett(int arr[],int n,int target){
         if(arr[i]==target){
             return i;
         }
-        else{
-            return -1;
-        }
+        
     }
+    return -1;
 }
 int main(){
     int n;
