@@ -18,4 +18,5 @@ int main(){
     int target;
     scanf("%d",&n);
     printf("%d",targett(arr,n,target));
+    return 0;
 }
