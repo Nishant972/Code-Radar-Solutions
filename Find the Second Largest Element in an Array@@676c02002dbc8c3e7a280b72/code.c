@@ -1,25 +1,18 @@
 #include<stdio.h>
-int largest(int arr[],int n){
-    int max=arr[0];
+int secondlarget(int arr[],int n){
+
     for(int i=0;i<n-1;i++){
-        if(arr[i+1]>max){
-            max=arr[i+1];
+        for(int j=0;j<n-i-1;j++)
+            if(arr[j+1]>arr[j]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+
         }
-    }
-    for(int i=0;i<n;i++){
-        if(arr[i]==max){
-            return i;
-        }
-        arr[i]==0;
-    }
-    ;
-    int abc=0;
-    for(int i=0;i<n-1;i++){
-        if(arr[i+1]>abc){
-            abc=arr[i+1];
-        }
-    }
-    return arr[abc];
+    
+    return arr[1];
+
 }
 int main(){
     int n;
@@ -28,5 +21,5 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",largest(arr,n));
+    printf("%d",secondlarget(arr,n));
 }
