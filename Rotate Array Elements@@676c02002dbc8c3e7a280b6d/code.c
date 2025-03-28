@@ -1,22 +1,29 @@
 #include<stdio.h>
+void shifttoright(int arr[],int n){
+    int last=arr[n-1];
+    for(int i=0;i<n;i++){
+        arr[i]=arr[i-1];
+    }
+    arr[0]=last;
+}
+void rotatearray(int arr[],int n,int k){
+    for(int i=0;i<n;i++){
+        shifttoright(arr,n);
+    }
+}
+
 int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d\n",&arr[i]);
+        scanf("%d",&arr[i]);
     }
     int k;
-    scanf("%d",k);
+    scanf("%d",&k);
+    rotatearray(arr,n,k);
     for(int i=0;i<n;i++){
-        for(int l=1;l<=k;l++){
-            int temp=arr[i];
-            arr[i]=arr[i+1];
-            arr[i+1]=temp;
-        }
+        printf("%d\n",arr[i]);
     }
-    for(int i=0;i<n;i++){
-        printf("%d/n",arr[i]);
-    }
-    return 0;
+
 }
