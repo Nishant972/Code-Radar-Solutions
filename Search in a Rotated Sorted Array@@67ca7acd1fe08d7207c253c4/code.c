@@ -8,5 +8,8 @@ int searchInRotatedArray(int arr[],int n,int target){
         }
         
     }
+    if(found==0){
+        return -1;
+    }
     
 }
