@@ -6,7 +6,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
                     printf("-1");
                 }
                 else{
-                    return arr[a-i];
+                    return arr[i-1];
                 }
             }
 
@@ -19,7 +19,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
                     printf("-1");
                 }
                 else{
-                    return arr[a-i];
+                    return arr[i-1];
                 }
             }
         }
