@@ -11,7 +11,12 @@ int secondlarget(int arr[],int n){
 
         }
     
-    return arr[1];
+    if(arr[1]){
+        return arr[1];
+    }
+    else{
+        return -1;
+    }
 
 }
 int main(){
