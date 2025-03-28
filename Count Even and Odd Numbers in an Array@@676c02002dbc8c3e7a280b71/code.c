@@ -1,4 +1,4 @@
-#include<Stdio.h>
+#include<stdio.h>
 int evenno(int arr[],int n){
     count=0;
     for(int i=0;i<n-1;i++){
