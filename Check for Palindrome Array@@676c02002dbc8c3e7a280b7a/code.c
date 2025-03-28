@@ -1,6 +1,6 @@
 #include<stdio.h>
 void palindromecheck(int arr[],int n){
-    found=0;
+    int found=0;
     for(int i=0;i<n;i++){
         if(arr[i]==arr[n-1-i]){
             found++;
