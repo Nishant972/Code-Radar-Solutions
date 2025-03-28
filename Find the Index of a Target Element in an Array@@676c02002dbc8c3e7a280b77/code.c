@@ -15,7 +15,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int target;
-    scanf("%d",&n);
+    scanf("%d",&target);
     printf("%d",targett(arr,n,target));
     return 0;
 }
