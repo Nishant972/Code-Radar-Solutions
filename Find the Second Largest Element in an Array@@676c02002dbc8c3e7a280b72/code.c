@@ -1,5 +1,5 @@
 #include<stdio.h>
-int largest(int arr[n],int n){
+int largest(int arr[],int n){
     int max=arr[0];
     for(int i=0;i<n-1;i++){
         if(arr[i+1]>max){
@@ -10,8 +10,9 @@ int largest(int arr[n],int n){
         if(arr[i]==max){
             return i;
         }
+        arr[i]==0;
     }
-    arr[i]==0;
+    ;
     int abc=0;
     for(int i=0;i<n-1;i++){
         if(arr[i+1]>abc){
