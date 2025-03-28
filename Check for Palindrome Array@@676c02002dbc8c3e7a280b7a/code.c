@@ -10,7 +10,7 @@ void palindromecheck(int arr[],int n){
         printf("YES");
     }
     else{
-        printf("NO")
+        printf("NO");
     }
 }
 int main(){
