@@ -26,7 +26,7 @@ int main(){
         scanf("%d",&n);
     }
     int k;
-    scanf("%d",&k)
+    scanf("%d",&k);
     rotatemore(arr,n,k);
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
