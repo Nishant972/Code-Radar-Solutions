@@ -6,9 +6,7 @@ int searchInRotatedArray(int arr[],int n,int target){
             found=1;
             return i;
         }
-        else{
-            return -1;
-        }
+        
     }
     
 }
