@@ -1,6 +1,6 @@
 #include<stdio.h>
 int evenno(int arr[],int n){
-    count=0;
+    int count=0;
     for(int i=0;i<n-1;i++){
         if(arr[i]%2==0){
             count++;
@@ -9,7 +9,7 @@ int evenno(int arr[],int n){
     return count;
 }
 int oddno(int arr[],int n){
-    abc=0;
+    int abc=0;
     for(int i=0;i<n-1;i++){
         if(arr[i]%2!=0){
             abc++;
