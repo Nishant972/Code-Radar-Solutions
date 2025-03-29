@@ -7,11 +7,7 @@ int consequance(int arr[],int  n){
         if(arr[i]>arr[i+1]){
             count++;
         }
-        if(arr[i]<arr[i+1]){
-            consecount++;
-            cd++;
-        }
-    }return count+consecount/cd;
+    }return count;
 }
 
 int main(){
