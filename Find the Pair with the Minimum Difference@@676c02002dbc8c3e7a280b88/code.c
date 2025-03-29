@@ -15,6 +15,7 @@ void smallestdifference(int arr[],int n){
                 min_diff=abs(arr[i]-arr[j]);
                 num1=arr[i];
                 num2=arr[j];
+                found=1;
             }
         }
     }if(!found){
