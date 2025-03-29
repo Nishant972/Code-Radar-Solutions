@@ -1,5 +1,5 @@
 #include<stdio.h>
-void isprime( int n){
+int isprime( int n){
     int flag=1;
     if(n<2){
         flag=1;
@@ -17,7 +17,7 @@ void isprime( int n){
     }
 
 }
-void primenumbers(int arr[],int a){
+int primenumbers(int arr[],int a){
     for(int i=0;i<n;i++){
         isprime(arr[i]);
     }
