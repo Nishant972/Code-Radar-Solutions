@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<limits.h>
+#include<stdlib.h>
+void smallestdifference(int arr[],int n){
+    int min_diff=INT_MIN;
+    int num1,num2;
+    for(int i=0;i<n;i++){
+
+        for(int j=i+1;j<n;j++){
+            if(abs(arr[i]-arr[j])<min_diff){
+                min_diff=arr[i]-arr[j];
+                num1=arr[i];
+                num2=arr[j];
+            }
+        }
+    }if(num1>num2){
+        printf("%d %d\n",num1,num2);
+    }else{
+        printf("%d %d\n",num2,num1);
+        
+    }
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    smallestdifference(arr,n);
+
+}
