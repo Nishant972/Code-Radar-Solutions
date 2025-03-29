@@ -4,14 +4,16 @@ int maxproduct(int arr[],int n){
     int secondmax=0;
     
     for(int i=1;i<n;i++){
-        
+        if(arr[i]<0){
+            arr[i]=-arr[i];
+        }
         if(arr[i]>firstmax){
             firstmax=arr[i];
         }
     }
     for(int j=1;j<n;j++){
-        if(arr[i]>secondmax && arr[i]<firstmax){
-            secondmax=arr[i];
+        if(arr[j]>secondmax && arr[j]<firstmax){
+            secondmax=arr[j];
         }
     }
     return firstmax*secondmax;
