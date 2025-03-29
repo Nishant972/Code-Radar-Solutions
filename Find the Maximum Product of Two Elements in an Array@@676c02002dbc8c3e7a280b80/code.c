@@ -5,8 +5,6 @@ int maxproduct(int arr[],int n){
     
     for(int i=1;i<n;i++){
         
-            arr[i]=-arr[i];
-        }
         if(arr[i]>firstmax){
             firstmax=arr[i];
         }
