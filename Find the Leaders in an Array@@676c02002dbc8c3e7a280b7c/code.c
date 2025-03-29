@@ -1,15 +1,19 @@
 #include<stdio.h>
 int isleader(int arr[],int n){
      for(int i=0;i<n;i++){
-        int found=0;
+        int found=1;
 
         for(int j=i+1;j<n;j++){
             if(arr[i]>arr[j]){
-                printf("%d ",arr[i]);
+                found=0;
+                break;
             }
         }
+        if(found){
+            printf("%d",arr[i]);
+        }
         
-    }
+    }printf("\n")
 }
 int main(){
     int n;
