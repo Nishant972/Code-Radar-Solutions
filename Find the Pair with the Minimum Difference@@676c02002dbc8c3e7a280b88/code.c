@@ -19,6 +19,7 @@ void smallestdifference(int arr[],int n){
         printf("%d %d\n",num1,num2);
         
     }
+    return -1;
 }
 int main(){
     int n;
