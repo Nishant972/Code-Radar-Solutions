@@ -3,21 +3,18 @@
 int secondsmalestelement(int arr[],int n){
     int firstsmall=INT_MIN;
     int secondsmall=INT_MIN;
-    int max=INT_MAX;
     for(int i=0;i<n;i++){
         if(arr[i]<firstsmall){
             firstsmall=arr[i];
         }
-        if(arr[i]>max){
-            max=arr[i];
-        }
+       
     }
     for(int j=0;j<n;j++){
-        if(arr[j]<secondsmall&&arr[j]>firstsmall&&arr[j]<max){
+        if(arr[j]<secondsmall&&arr[j]>firstsmall){
             secondsmall=arr[j];
         }
     }
-    return secondsmall;
+    return (secondsmall==INT_MIN)-1:secondsmall;
 }
 int main(){
     int n;
