@@ -17,7 +17,7 @@ int secondsmalestelement(int arr[],int n){
             secondsmall=arr[j];
         }
     }
-    return (secondsmall==INT_MIN)?-1:secondsmall;
+    return (secondsmall==INT_MAX)?-1:secondsmall;
 }
 int main(){
     int n;
