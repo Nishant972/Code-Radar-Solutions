@@ -8,7 +8,8 @@ int consequance(int arr[],int  n){
             count++;
         }
         else{
-            count 1;
+            count=1;
+            return count;
         }
     }return count;
 }
