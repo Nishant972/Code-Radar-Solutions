@@ -6,7 +6,7 @@ void rotatebyone(int arr[],int n){
     }
     arr[n-1]=temp;
 } 
-int rotatemore(int arr[],int n,int k){
+void rotatemore(int arr[],int n,int k){
     for(int i=1;i<=k;i++){
         rotatebyone(arr,n);
     }
