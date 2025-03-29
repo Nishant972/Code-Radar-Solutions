@@ -14,7 +14,7 @@ int secondsmalestelement(int arr[],int n){
     }
     for(int j=0;j<n;j++){
         if(arr[j]<secondsmall&&arr[j]>firstsmall&&arr[j]<max){
-            arr[j]=secondsmall;
+            secondsmall=arr[j];
         }
     }
     return secondsmall;
