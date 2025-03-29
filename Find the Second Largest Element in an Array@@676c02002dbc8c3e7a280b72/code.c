@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<limits.h>
 int secondlarget(int arr[],int n){
     int firstmax=INT_MIN,secondmax=INT_MIN;
     for(int i=0;i<n;i++){
