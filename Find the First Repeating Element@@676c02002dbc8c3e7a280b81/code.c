@@ -1,5 +1,5 @@
 #include<stdio.h>
-int repeating(int arr,int n){
+int repeating(int arr[],int n){
     for(int i=0;i<n;i++){
         int diff[n];
         int index[n];
