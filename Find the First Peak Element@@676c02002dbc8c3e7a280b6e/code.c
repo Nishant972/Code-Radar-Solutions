@@ -7,7 +7,7 @@ int pealelement(int arr[],int n,int target){
         }
     }
     for(int j=1;j<n;j++){
-if(n-b-j>0){
+        if(b+j<n){
             if(target<arr[b+j]){
             return arr[b+j];}
 
@@ -17,10 +17,9 @@ if(n-b-j>0){
                 return arr[b-j];
             }
         }
-        else{
-            return -1;
-        }              
+                     
     }
+    return -1;
 }
 
 int main(){
