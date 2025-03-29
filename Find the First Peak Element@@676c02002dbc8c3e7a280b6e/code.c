@@ -7,7 +7,7 @@ int pealelement(int arr[],int n,int target){
         }
     }
     for(int j=1;j<n;j++){
-        if(n-b-j>0){
+if(n-b-j>0){
             if(target<arr[b+j]){
             return arr[b+j];}
 
@@ -32,5 +32,5 @@ int main(){
     }
     int target;
     scanf("%d",&target);
-    printf("%d",pealelement);
+    printf("%d",pealelement(arr,n,target));
 }
