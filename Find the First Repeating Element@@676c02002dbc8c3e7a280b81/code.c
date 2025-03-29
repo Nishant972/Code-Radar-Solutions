@@ -5,7 +5,7 @@ int repeating(int arr[],int n){
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 if(j-1<minindex){
-                    minindex=i
+                    minindex=i;
                 }
             }
         }
