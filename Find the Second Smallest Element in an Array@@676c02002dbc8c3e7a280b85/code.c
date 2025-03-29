@@ -3,6 +3,9 @@
 int secondsmalestelement(int arr[],int n){
     int firstsmall=INT_MIN;
     int secondsmall=INT_MIN;
+    if(n<2){
+        return -1;
+    }
     for(int i=0;i<n;i++){
         if(arr[i]<firstsmall){
             firstsmall=arr[i];
