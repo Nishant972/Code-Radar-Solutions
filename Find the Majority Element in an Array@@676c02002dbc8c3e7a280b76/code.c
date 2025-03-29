@@ -1,4 +1,5 @@
-int majority(int arr[],int n){
+#include<stdio.h>
+int major(int arr[],int n){
     
     for(int i=0;i<n;i++){
         int count=0;
@@ -7,17 +8,19 @@ int majority(int arr[],int n){
                 count++;
             }
         }
-       if(count>n/2){
-        return arr[i];
-       }
-    }return -1;
-}   
+        if(count>n/2){
+            return arr[i];
+        }
+
+    }
+    return -1;
+}
 int main(){
-    int n;
-    scanf("%d",&n);
+    int  n;
+    scanf("%d",&d);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",majority(arr,n));
+    printf("%d",major(arr,n));
 }
