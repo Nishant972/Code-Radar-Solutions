@@ -1,16 +1,15 @@
 #include<stdio.h>
 int sumofdigit(int arr[],int n){
-    int a, b,sum=0,arrn[n];
+    
     for(int i=0;i<n;i++){
+        int sum=0;
         while(arr[i]>0){
             sum+=arr[i]%10;
             arr[i]/=10;
         }
-        arrn[sum];
+        arr[i]=sum;
     }
-    for(int i=0;i<n;i++){
-        return arrn[i];
-    }
+    
 }
 int main(){
     int n;
@@ -19,5 +18,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",sumofdigit(arr,n));
+    sumofdigit(arr,n);
+    for(int i=0;i<n;i++){
+        prinf("%d",arr[i]);
+    }
 }
