@@ -10,7 +10,7 @@ int largesteven(int arr[],int n){
         }
     }
 
-    return max_even;
+    return (max_even==INT_MIN)?-1:max_even;
     
 }
 int main(){
