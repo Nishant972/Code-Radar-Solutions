@@ -18,7 +18,7 @@ int main(){
         }
     }
     if(!printed){
-        printf("da");
+        printf("no valid pair\n");
     }
     else{
         return 0;
