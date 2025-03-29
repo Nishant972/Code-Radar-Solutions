@@ -17,8 +17,12 @@ int main(){
             }
         }
     }
-    if(printed){
+    if(!printed){
+        printf("da");
+    }
+    else{
         return 0;
     }
+    
     
 }
