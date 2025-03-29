@@ -27,5 +27,5 @@ int main(){
     for(int i=0;i<a;i++){
         scanf("%d",&arr[a]);
     }
-    printf("%d",primenumbers);
+    printf("%d",primenumbers(arr,a));
 }
