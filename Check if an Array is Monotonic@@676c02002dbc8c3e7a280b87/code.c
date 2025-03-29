@@ -3,23 +3,21 @@ int increasing(int arr[],int n){
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
+                return 0;
             }
         }
     }
+    return 1;
 }
 int decreasing(int arr[],int n){
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j]<arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
+                return 0;
             }
         }
     }
+    return 1;
 }
 int main(){
     int n;
@@ -28,7 +26,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(arr[]==increasing(arr,n)||arr[]==decreasing){
+    if(increasing(arr,n)|| decreasing){
         printf("YES");
     }
     else{
