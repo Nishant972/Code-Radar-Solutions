@@ -7,7 +7,7 @@ void smallestdifference(int arr[],int n){
     }
     int min_diff=INT_MAX;
     int num1,num2;
-    
+    int found=0;
     for(int i=0;i<n;i++){
 
         for(int j=i+1;j<n;j++){
@@ -17,11 +17,15 @@ void smallestdifference(int arr[],int n){
                 num2=arr[j];
             }
         }
-    }if(num1>num2){
-        printf("%d %d\n",num2,num1);
-    }else{
-        printf("%d %d\n",num1,num2);
-        
+    }if(!found){
+        printf("-1\n");
+    }
+    else{
+        if(num1>num2){
+            printf("%d %d\n",num2,num1);
+        }else{
+        printf("%d %d\n",num1,num2);   
+        }
     }
 }
 int main(){
