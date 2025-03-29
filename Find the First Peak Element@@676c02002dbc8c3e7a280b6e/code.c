@@ -11,20 +11,27 @@ int pealelement(int arr[],int n,int target){
         return -1;
     }
 
+    int right=-1,left=-1;
     for(int j=1;j<n;j++){
-        if(b+j<n){
-            if(target<arr[b+j]){
-            return arr[b+j];}
-
+        if(b+j<n && arr[b+j]>target){
+            return arr[b+j];
+            right=arr[b+j];
+            break;
         }
-        if(b-j>=0){
-            if(target<arr[b-j]){
-                return arr[b-j];
-            }
-        }
-                     
     }
-    return -1;
+    for(int j=b-1;j>0;j++){
+        if(b-j>0;arr[b-j]>target){
+            return arr[b-j];
+            left=arr[b-j];
+        }
+    }
+    if(right==-1){
+        return left;
+    }
+    if (left==-1){
+        return right;
+    }
+    return(right-target<left-target) ? right:left;
 }
 
 int main(){
