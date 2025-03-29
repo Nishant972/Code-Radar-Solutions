@@ -19,11 +19,14 @@ int pealelement(int arr[],int n,int target){
             break;
         }
     }
-    for(int j=b-1;j>0;j++){
+    for(int j=b-1;j>=0;j++){
         if(arr[j]>target){
             left=arr[j];
             break;
         }
+    }
+    if(right==-1&&left==-1){
+        return -1;
     }
     if(right==-1){
         return left;
