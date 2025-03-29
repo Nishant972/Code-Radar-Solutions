@@ -1,9 +1,13 @@
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>
-int smallestdifference(int arr[],int n){
+void smallestdifference(int arr[],int n){
+    if(n<2){
+        return ;
+    }
     int min_diff=INT_MAX;
     int num1,num2;
+    
     for(int i=0;i<n;i++){
 
         for(int j=i+1;j<n;j++){
@@ -19,7 +23,6 @@ int smallestdifference(int arr[],int n){
         printf("%d %d\n",num1,num2);
         
     }
-    return -1;
 }
 int main(){
     int n;
