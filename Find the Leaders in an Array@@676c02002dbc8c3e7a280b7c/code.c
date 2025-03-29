@@ -13,7 +13,7 @@ int isleader(int arr[],int n){
             printf("%d",arr[i]);
         }
         
-    }printf("\n")
+    }printf("\n");
 }
 int main(){
     int n;
