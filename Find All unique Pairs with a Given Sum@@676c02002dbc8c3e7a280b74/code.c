@@ -17,10 +17,8 @@ int main(){
             }
         }
     }
-    if(!printed){
-        continue;
-    }
-    else{
+    if(printed){
         return 0;
     }
+    
 }
