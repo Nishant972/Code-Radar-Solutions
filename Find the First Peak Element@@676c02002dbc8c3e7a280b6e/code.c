@@ -14,15 +14,15 @@ int pealelement(int arr[],int n,int target){
     int right=-1,left=-1;
     for(int j=1;j<n;j++){
         if(b+j<n && arr[b+j]>target){
-            return arr[b+j];
+            
             right=arr[b+j];
             break;
         }
     }
     for(int j=b-1;j>0;j++){
         if(b-j>0&&arr[b-j]>target){
-            return arr[b-j];
             left=arr[b-j];
+            break;
         }
     }
     if(right==-1){
