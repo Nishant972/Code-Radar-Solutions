@@ -1,7 +1,7 @@
 #include<stdio.h>
 int increasing(int arr[],int n){
     
-        for(int j=0;j<n-i-1;j++){
+        for(int j=0;j<n-1;j++){
             if(arr[j]>arr[j+1]){
                 return 0;
             }
@@ -11,7 +11,7 @@ int increasing(int arr[],int n){
 }
 int decreasing(int arr[],int n){
     
-        for(int j=0;j<n-i-1;j++){
+        for(int j=0;j<n-1;j++){
             if(arr[j]<arr[j+1]){
                 return 0;
             }
