@@ -12,16 +12,16 @@ int pealelement(int arr[],int n,int target){
     }
 
     int right=-1,left=-1;
-    for(int j=1;j<n;j++){
-        if(b+j<n && arr[b+j]>target){
+    for(int j=b+1;j<n;j++){
+        if(arr[j]>target){
             
-            right=arr[b+j];
+            right=arr[j];
             break;
         }
     }
     for(int j=b-1;j>0;j++){
-        if(arr[b-j]>target){
-            left=arr[b-j];
+        if(arr[j]>target){
+            left=arr[j];
             break;
         }
     }
