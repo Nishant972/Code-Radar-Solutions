@@ -12,9 +12,7 @@ int isprime( int n){
     if(flag==1){
         return n;
     }
-    else{
-        continue;
-    }
+    
 
 }
 int primenumbers(int arr[],int a){
