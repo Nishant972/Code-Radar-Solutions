@@ -1,6 +1,6 @@
 #include<stdio.h>
 int rotatebyone(int arr[],int n){
-    int temp=arr[0]
+    int temp=arr[0];
     for(int i=0;i<n-1;i++){
         arr[i]=arr[i+1];
     }
