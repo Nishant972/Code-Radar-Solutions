@@ -14,7 +14,7 @@ int main(){
             if(arr[i]=arr[j] && arr[i]+arr[j]==target){
                 printf("%d %d",arr[i],arr[j]);
             }
-            else if(arr[j]+arr[i]==target){
+             if(arr[j]+arr[i]==target){
                 printf("%d %d\n",arr[i],arr[j]);
                 printed=1;
                 
