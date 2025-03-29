@@ -28,7 +28,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(arr==increasing(arr,n)||arr==decreasing){
+    if(arr[]==increasing(arr,n)||arr[]==decreasing){
         printf("YES");
     }
     else{
