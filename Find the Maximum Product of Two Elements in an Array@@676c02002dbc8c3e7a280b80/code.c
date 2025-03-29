@@ -1,10 +1,12 @@
 #include<stdio.h>
 int maxproduct(int arr[],int n){
     int firstmax=arr[0];
-    int secondmax=arr[0];
+    int secondmax=0;
     
     for(int i=1;i<n;i++){
-        
+        if(arr[i]<0){
+            arr[i]=-arr[i];
+        }
         if(arr[i]>firstmax){
             firstmax=arr[i];
         }
