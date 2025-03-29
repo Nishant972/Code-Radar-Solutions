@@ -14,8 +14,13 @@ int main(){
             if(arr[j]+arr[i]==target){
                 printf("%d %d\n",arr[i],arr[j]);
                 printed=1;
-                
             }
         }
+    }
+    if(!printed){
+        continue;
+    }
+    else{
+        return 0;
     }
 }
