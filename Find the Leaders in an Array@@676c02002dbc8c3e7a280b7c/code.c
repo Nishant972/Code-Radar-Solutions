@@ -10,7 +10,7 @@ int isleader(int arr[],int n){
             }
         }
         if(found){
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
         
     }printf("\n");
