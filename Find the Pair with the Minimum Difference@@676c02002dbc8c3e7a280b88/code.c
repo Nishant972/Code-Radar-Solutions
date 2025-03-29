@@ -2,13 +2,13 @@
 #include<limits.h>
 #include<stdlib.h>
 void smallestdifference(int arr[],int n){
-    int min_diff=INT_MIN;
+    int min_diff=INT_MAX;
     int num1,num2;
     for(int i=0;i<n;i++){
 
         for(int j=i+1;j<n;j++){
             if(abs(arr[i]-arr[j])<min_diff){
-                min_diff=arr[i]-arr[j];
+                min_diff=abs(arr[i]-arr[j]);
                 num1=arr[i];
                 num2=arr[j];
             }
