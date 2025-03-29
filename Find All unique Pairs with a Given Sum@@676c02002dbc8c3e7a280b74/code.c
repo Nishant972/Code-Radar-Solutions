@@ -20,9 +20,9 @@ int main(){
     if(!printed){
         printf("no valid pair\n");
     }
-    else{
+ 
         return 0;
-    }
+    
     
     
 }
