@@ -5,11 +5,15 @@ int secondlarget(int arr[],int n){
         if(arr[i]>firstmax){
             firstmax=arr[i];
         }
-    }
+    }int found=0;
     for(int j=0;j<n;j++){
         if(arr[j]>0 &&arr[j]<firstmax){
             secondmax=arr[j];
+            found=1;
         }
+    }
+    if(found==0){
+        return-1;
     }
     return secondmax;
 
