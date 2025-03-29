@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<limits.h>
 int secondsmalestelement(int arr[],int n){
-    int firstsmall=int_min,secondsmall=int_min,max=int_max;
+    int firstsmall=int_min;
+    int secondsmall=int_min;
+    int max=int_max;
     for(int i=0;i<n;i++){
         if(arr[i]<firstsmall){
             firstsmall=arr[i];
