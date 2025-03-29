@@ -2,6 +2,9 @@
 int numberofpalindrom(int arr[],int n){
     int count =0;
     for(int i=0;i<n;i++ ){
+        if(arr[i]<0){
+            continue;
+        }
         int c=arr[i];
         int l=0;
         int rev=0;
