@@ -1,25 +1,17 @@
 #include<stdio.h>
 int repeating(int arr[],int n){
+    int minindex=n;
     for(int i=0;i<n;i++){
-        int diff[n];
-        int index[n];
-        
-        int min=diff[0];
-        int minindex;
-        for(int j=0;j<n;j++){
+        for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
-            diff[]=j-i;
-            index[]=i;
+                if(j-1<minindex){
+                    minindex=i
+                }
             }
         }
-        for(int k=0;k<n;k++){
-            if(diff[k]<min){
-                min=diff[k];
-                minindex=index[k];
-            }
-        }
-        return arr[minindex];    
+            
     }
+    return (minindex==n) ?-1:arr[minindex];
 }
 int main(){
     int n;
