@@ -15,7 +15,7 @@ int isprime( int n){
 }
 int primenumbers(int arr[],int a){
     int count =0;
-    for(int i=0;i<a;i++){
+    for(int i=2;i<a;i++){
         if(isprime(arr[i])){
             count++;
         }
