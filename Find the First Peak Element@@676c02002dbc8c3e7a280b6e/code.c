@@ -20,7 +20,7 @@ int pealelement(int arr[],int n,int target){
         }
     }
     for(int j=b-1;j>0;j++){
-        if(b-j>0;arr[b-j]>target){
+        if(b-j>0&&arr[b-j]>target){
             return arr[b-j];
             left=arr[b-j];
         }
