@@ -1,6 +1,6 @@
 #include<stdio.h>
 int secondlarget(int arr[],int n){
-    int firstmax=0,secondmax=0;
+    int firstmax=min,secondmax=min;
     for(int i=0;i<n;i++){
         if(arr[i]>firstmax){
             firstmax=arr[i];
