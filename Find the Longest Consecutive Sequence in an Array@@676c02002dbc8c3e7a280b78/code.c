@@ -7,10 +7,7 @@ int consequance(int arr[],int  n){
         if(arr[i]<arr[i+1]){
             count++;
         }
-        else{
-            count=1;
-            return count;
-        }
+        
     }return count;
 }
 
