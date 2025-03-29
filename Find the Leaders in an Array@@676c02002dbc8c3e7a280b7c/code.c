@@ -12,7 +12,7 @@ int main(){
             if(arr[i]>arr[j]){
                 printf("%d ",arr[j]);
                 found=1;
-                return;
+                return 0;
             }
         }
         
