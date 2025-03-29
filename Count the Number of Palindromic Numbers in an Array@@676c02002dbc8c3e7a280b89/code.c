@@ -7,7 +7,7 @@ int numberofpalindrom(int arr[],int n){
         int rev=0;
         while(c!=0){
             n=c%10;
-            rev+=c;
+            rev=rev*10+c;
             n=n/10;
 
         }
