@@ -1,24 +1,25 @@
 #include<stdio.h>
 int isprime( int n){
-    int flag=1;
+    
     if(n<2){
-        flag=1;
+        return 0;
     }
     for(int i=2;i<n/2;i++){
         if(n%i==0){
-            flag=0;
+            return 0;
         }
     }
-    if(flag==1){
-        return n;
-    }
+    return 1;
     
 
 }
 int primenumbers(int arr[],int a){
+    int count =0;
     for(int i=0;i<a;i++){
-        isprime(arr[i]);
-    }
+        if(isprime(arr[i])){
+            count++;
+        }
+    }return count;
 }
 int main(){
     int a;
