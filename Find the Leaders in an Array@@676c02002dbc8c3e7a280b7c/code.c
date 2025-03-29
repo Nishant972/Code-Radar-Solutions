@@ -10,5 +10,6 @@ int main(){
         if(arr[i]<=arr[i+1]){
             printf("%d ",arr[i+1]);
         }
-    }
+        
+    }printf("%d",arr[n-1]);
 }
