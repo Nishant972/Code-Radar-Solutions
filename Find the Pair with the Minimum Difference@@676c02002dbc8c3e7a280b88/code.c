@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>
-void smallestdifference(int arr[],int n){
+int smallestdifference(int arr[],int n){
     int min_diff=INT_MAX;
     int num1,num2;
     for(int i=0;i<n;i++){
