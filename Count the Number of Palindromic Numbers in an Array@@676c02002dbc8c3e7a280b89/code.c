@@ -3,12 +3,12 @@ int numberofpalindrom(int arr[],int n){
     int count =0;
     for(int i=0;i<n;i++ ){
         int c=arr[i];
-        int n=0;
+        int l=0;
         int rev=0;
         while(c!=0){
-            n=c%10;
-            rev=rev*10+n;
-            n=n/10;
+            l=c%10;
+            rev=rev*10+l;
+            c=c/10;
 
         }
         if(rev==arr[i]){
