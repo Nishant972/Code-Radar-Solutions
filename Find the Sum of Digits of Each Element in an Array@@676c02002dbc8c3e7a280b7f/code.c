@@ -4,7 +4,7 @@ int sumofdigit(int arr[],int n){
     for(int i=0;i<n;i++){
         int sum=0;
         if(arr[i]<0){
-            arr[i]==-arr[i];
+            arr[i]=-arr[i];
         }
         while(arr[i]>0){
             sum+=arr[i]%10;
