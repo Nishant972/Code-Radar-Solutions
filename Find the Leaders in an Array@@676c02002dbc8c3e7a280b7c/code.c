@@ -4,7 +4,7 @@ int isleader(int arr[],int n){
         int found=1;
 
         for(int j=i+1;j<n;j++){
-            if(arr[i]>arr[j]){
+            if(arr[i]<arr[j]){
                 found=0;
                 break;
             }
