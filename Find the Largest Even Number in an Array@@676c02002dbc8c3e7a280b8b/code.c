@@ -1,8 +1,8 @@
 #include<stdio.h>
+#include<limits.h>
 int largesteven(int arr[],int n){
-    int max_even=-1;
+    int max_even=INT_MIN;
     for(int i=0;i<n;i++){
-       
         if(arr[i]%2==0){
             if(arr[i]>max_even){
                 max_even=arr[i];
