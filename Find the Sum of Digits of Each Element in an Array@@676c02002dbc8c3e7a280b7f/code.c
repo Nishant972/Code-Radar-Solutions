@@ -1,5 +1,5 @@
 #include<stdio.h>
-int sumofdigit(int arr[],int n){
+int sumofdigit(int arr[n],int n){
     int a, b,sum=0,arrn[];
     for(int i=0;i<n;i++){
         while(arr[i]>0){
