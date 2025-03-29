@@ -7,6 +7,7 @@ int largesteven(int arr[],int n){
             found=1;
         }
     }
+    int even[count];
     if(found==1){
         for(int i=0;i<n;i++){
             if(arr[i]%2==0){
