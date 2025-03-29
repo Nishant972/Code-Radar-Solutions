@@ -1,6 +1,6 @@
 #include<stdio.h>
 int secondlarget(int arr[],int n){
-    int firstmax=Int_min,secondmax=Int_min;
+    int firstmax=INT_MIN,secondmax=INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i]>firstmax){
             firstmax=arr[i];
@@ -13,7 +13,7 @@ int secondlarget(int arr[],int n){
         }
     }
     
-    return (secondmax==Int_min)? -1:secondmax;
+    return (secondmax==INT_MIN)? -1:secondmax;
 
 }
 int main(){
