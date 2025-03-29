@@ -9,7 +9,7 @@ int consequance(int arr[],int  n){
         }
         if(arr[i]<arr[i+1]){
             consecount++;
-            cd++
+            cd++;
         }
     }return count+consecount/cd;
 }
