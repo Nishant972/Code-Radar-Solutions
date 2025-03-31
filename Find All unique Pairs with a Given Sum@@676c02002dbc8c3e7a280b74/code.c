@@ -18,8 +18,7 @@ int main(){
                     printed=1;
                     return 0 ;
                 }
-                printed=1;
-                return 0 ;
+                ;
             }
         }
     }
