@@ -11,7 +11,7 @@ void reverse(int arr[],int end,int start){
 void rotate(int arr[],int n,int k){
     k=k%n;
     if(k==0){
-        return 0;
+        return;
     }
     reverse(arr,n-1,0);
     reverse(arr,k-1,0);
