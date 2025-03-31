@@ -9,8 +9,10 @@ int consequance(int arr[],int  n){
             count++;
             break;
             }
-        
-    }return count;
+        else{
+            count++;   
+        }
+    return count;
 }
 
 int main(){
