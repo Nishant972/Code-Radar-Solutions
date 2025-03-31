@@ -1,16 +1,21 @@
 #include<stdio.h>
-void rotatebyone(int arr[],int n){
-    int temp=arr[0];
-    for(int i=0;i<n-1;i++){
-        arr[i]=arr[i+1];
+void reverse(int arr[n],int end,int start){
+    while(start<end){
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
     }
-    arr[n-1]=temp;
-} 
-void rotatemore(int arr[],int n,int k){
+}
+void rotate(int arr[],int n,int k){
     k=k%n;
-    for(int i=1;i<=k;i++){
-        rotatebyone(arr,n+1);
+    if(k==0){
+        return 0;
     }
+    reverse(arr,n-1,0);
+    reverse(arr,k-1,0);
+    reverse(arr,n-1,k);
 }
 int main(){
     int n;
@@ -21,8 +26,8 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    rotatemore(arr,n,k);
+    rotate(arr,n,k);
     for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+        printf("%d",arr[i]);
     }
 }
