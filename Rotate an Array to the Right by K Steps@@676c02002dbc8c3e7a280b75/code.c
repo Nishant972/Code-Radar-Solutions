@@ -9,7 +9,7 @@ void rotatebyone(int arr[],int n){
 void rotatemore(int arr[],int n,int k){
     k=k%n;
     for(int i=1;i<=k;i++){
-        rotatebyone(arr,n);
+        rotatebyone(arr,n+1);
     }
 }
 int main(){
